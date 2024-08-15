@@ -1,0 +1,16 @@
+body{
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.miau{
+    background-color: black;
+
+}
+
+.name{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-size-adjust: 10px;
+}
