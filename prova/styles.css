@@ -18,24 +18,23 @@ nav{
 div.imagem{
     display: inline-block;
     margin: 15px;
-    padding: 60px;
+    padding: 140px;
 }
 div.imagemd{
     display: inline-block;
     margin: 15px;
-    padding: 70px;
+    padding: auto;
 }
 div.imagemt{
     display: inline-block;
     margin: 15px;
-    padding: 80px;
+    padding: 120px;
 }
 div.imagemq{
     display: flex;
     margin: 15px;
-    padding: 15px;
-    padding-right: 450px;
-    padding-left: 550px;
+    padding-right: 520px;
+    padding-left: 600px;
 
 }
 
