@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+body { 
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 150;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #accaca;
+}
+
+
+nav{
+    background-color: #91d3d3;
+}
+
+div.imagem{
+    display: inline-block;
+    margin: 15px;
+    padding: 20px;
+}
+div.imagemd{
+    display: inline-block;
+    margin: 15px;
+    padding: 20px;
+}
+div.imagemt{
+    display: inline-block;
+    margin: 15px;
+    padding: 20px;
+}
+div.imagemq{
+    display: flex;
+    margin: 15px;
+    padding-right: 200px;
+    padding-left: 400px;
+
+}
+div.imagemc{
+    display: flex;
+    margin: 15px;
+    padding-right: 300px;
+    padding-left: 710px;
+padding-bottom: 400px;
+
+
+}
+
+.nome{
+    color: rgb(255, 255, 255);
+    text-size-adjust: 5px;
+}
+.cpf{
+    color: rgb(255, 255, 255);
+    text-size-adjust: 5px;
+}
+.data{
+    color: rgb(255, 255, 255);
+    text-size-adjust: 5px;
+}
+.email{
+    color: rgb(255, 255, 255);
+    text-size-adjust: 5px;
+}
+
+
+footer {
+    background-color: #449b9b;
+    color: #EEEEEE;
+    padding: 20px;
+    text-align: center;
+}
+
+footer div.face li a  {
+    color: rgb(35, 41, 121);
+    float: center;
+}
+
+footer div.zap li a {
+    color: rgb(25, 115, 65);
+    float: center;
+}
+
+footer div .insta li a {
+    color: rgb(143, 43, 111);
+    float: right;
+}
