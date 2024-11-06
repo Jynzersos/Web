@@ -6,7 +6,7 @@
 
 ###
 
-<div align="center">
+<div align="left">
   <img height="200" src="https://i.pinimg.com/originals/dd/16/fc/dd16fcb13a206a7dcf5b3f83b0f41588.gif"  />
 </div>
 
