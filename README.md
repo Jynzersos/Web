@@ -6,10 +6,6 @@
 
 ###
 
-<div align="center">
-  <img height="200" src="https://i.pinimg.com/564x/e4/8c/df/e48cdf1fb9b2aa453af5745306a7bd1c.jpg"  />
-</div>
-
 ###
 
 <h2 align="left">As linguagens usadas pra esse repositório:</h2>
