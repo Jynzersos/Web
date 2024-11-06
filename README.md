@@ -6,6 +6,10 @@
 
 ###
 
+<div align="center">
+  <img height="200" src="https://i.pinimg.com/originals/c8/e1/57/c8e15787a56cba7278146d79c93fd7bc.gif"  />
+</div>
+
 ###
 
 <h2 align="left">As linguagens usadas pra esse repositório:</h2>
@@ -22,6 +26,6 @@
 
 ###
 
-<div align="center">
-  <img height="200" src="https://i.pinimg.com/originals/dd/16/fc/dd16fcb13a206a7dcf5b3f83b0f41588.gif"  />
-</div>
+<img src="https://raw.githubusercontent.com/jynzersos/jynzersos/output/snake.svg" alt="Snake animation" />
+
+###
