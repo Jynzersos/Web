@@ -23,11 +23,5 @@
 ###
 
 <div align="center">
-  <img height="200" src="https://i.pinimg.com/originals/c8/e1/57/c8e15787a56cba7278146d79c93fd7bc.gif"  />
-</div>
-
-###
-
-<div align="center">
-  <img height="200" src="https://i.pinimg.com/564x/e4/8c/df/e48cdf1fb9b2aa453af5745306a7bd1c.jpg"  />
+  <img height="200" src="https://i.pinimg.com/originals/dd/16/fc/dd16fcb13a206a7dcf5b3f83b0f41588.gif"  />
 </div>
