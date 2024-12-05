@@ -1,68 +1,40 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const taskForm = document.getElementById('task-form');
-    const taskName = document.getElementById('task-name');
-    const prioritySelect = document.getElementById('priority');
-    const tasksList = document.getElementById('tasks');
+// Função para buscar as tarefas do banco de dados e exibi-las na página
+function carregarTarefas() {
+    fetch('/tasks') // URL correta para acessar as tarefas
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erro na requisição');
+            }
+            return response.json(); // Converte a resposta para JSON
+        })
+        .then(tarefas => {
+            const listaTarefas = document.getElementById("tasks");
+            listaTarefas.innerHTML = ''; // Limpa a lista antes de adicionar as tarefas
 
-    taskForm.addEventListener('submit', function(e) {
-        e.preventDefault();
+            tarefas.forEach(tarefa => {
+                const tarefaAdd = document.createElement("li");
+                tarefaAdd.textContent = `${tarefa.tarefa} - Prioridade: ${tarefa.prioridade}`;
 
-        const taskText = taskName.value;
-        const taskPriority = prioritySelect.value;
+                // Botão de remover tarefa
+                const concluirTar = document.createElement("button");
+                concluirTar.textContent = "Remover";
+                concluirTar.addEventListener("click", function() {
+                    tarefaAdd.remove();
+                });
 
-        if (taskText) {
-            addTask(taskText, taskPriority);
-        }
+                // Adicionar o botão à tarefa
+                tarefaAdd.appendChild(concluirTar);
 
-        taskName.value = ''; // Limpa o campo de entrada
-    });
+                // Adicionar a tarefa à lista
+                listaTarefas.appendChild(tarefaAdd);
+            });
+        })
+        .catch((error) => {
+            console.error('Erro ao carregar tarefas:', error);
+        });
+}
 
-    function addTask(text, priority) {
-        const li = document.createElement('li');
-        li.classList.add(`priority-${priority}`);
-        
-        const span = document.createElement('span');
-        span.textContent = text;
-
-        const editButton = document.createElement('button');
-        editButton.classList.add('edit');
-        editButton.textContent = 'Editar';
-        editButton.onclick = () => editTask(li);
-
-        const cancelButton = document.createElement('button');
-        cancelButton.classList.add('cancel');
-        cancelButton.textContent = 'Cancelar';
-        cancelButton.onclick = () => cancelTask(li);
-
-        const completeButton = document.createElement('button');
-        completeButton.classList.add('complete');
-        completeButton.textContent = 'Concluir';
-        completeButton.onclick = () => completeTask(li);
-
-        li.appendChild(span);
-        li.appendChild(editButton);
-        li.appendChild(cancelButton);
-        li.appendChild(completeButton);
-
-        tasksList.appendChild(li);
-    }
-
-    function editTask(task) {
-        const newText = prompt('Editando tarefa:', task.querySelector('span').textContent);
-        if (newText) {
-            task.querySelector('span').textContent = newText;
-        }
-    }
-
-    function cancelTask(task) {
-        if (confirm('Deseja realmente cancelar esta tarefa?')) {
-            task.remove();
-        }
-    }
-
-    function completeTask(task) {
-        task.style.textDecoration = 'line-through';
-        task.style.backgroundColor = '#e0e0e0';
-        task.querySelector('.complete').disabled = true;
-    }
+// Carregar as tarefas ao carregar a página
+document.addEventListener("DOMContentLoaded", function() {
+    carregarTarefas();  // Carrega as tarefas assim que a página é carregada
 });

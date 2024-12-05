@@ -1,0 +1,26 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "bah",
+  "main": "todo.js",
+  "scripts": {
+    "test": "miau"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jynzersos/Web.git"
+  },
+  "keywords": [
+    "Mizkayee2-"
+  ],
+  "author": "jynzersos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jynzersos/Web/issues"
+  },
+  "homepage": "https://github.com/Jynzersos/Web#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mysql": "^2.18.1"
+  }
+}
